@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fernando Nagua - CV</title>
 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-
-<body>
-    <head>
-        <img src="assets/foto-perfil.jpg" alt="Foto de perfil" width="200" height="200" />
-        <h1>Fernando Nagua</h1>
     </head>
+    
+<body>
+    <div id="lazo"></div>
+    <header>
+        <div id="wrapper-foto">
+            <img src="assets/foto-perfil.jpg" alt="Foto de perfil" id="foto-perfil"/>
+        </div>
+        <div id="wrapper-nombre">
+            <h1 id="titulo-nombre">Fernando<br/>Nagua</h1>
+            <h2 id="titulo-ocupacion">Estudiante de Ingeniería en Software</h2>
+        </div>
+    </header>
     <main>
-        <aside>
-            <section>
+        <aside id="aside-cv">
+            <section id="seccion-informacion-personal">
                 <h2>Contacto</h2>
                 <ul>
                     <li>
                         <span class="material-symbols-outlined">phone_in_talk</span>
-                        +593 991 306 582
+                        +593 991 306 582                        
                     </li>
                     <li>
                         <a href="mailto:fernandonagua18@hotmail.com">
@@ -41,15 +48,15 @@
                         </a>
                     </li>
                 </ul>
-            </section>
-            <section>
+            </section>            
+            <section id="seccion-idiomas">
                 <h2>Idiomas</h2>
                 <ul>
                     <li>Español: Nativo</li>
                     <li>Inglés: B1</li>
                 </ul>
             </section>
-            <section>
+            <section id="seccion-tecnologias">
                 <h2>Tecnologías</h2>
                 <ul>
                     <li>Java Intermedio</li>
@@ -60,7 +67,7 @@
                     <li>JavaScript Básico</li>
                 </ul>
             </section>
-            <section>
+            <section id="seccion-habilidades">
                 <h2>Habilidades</h2>
                 <ul>
                     <li>Gestión de proyectos</li>
@@ -72,8 +79,8 @@
             </section>
         </aside>
     
-        <article>
-            <section>
+        <article id="article-cv">
+            <section id="seccion-perfil-profesional">
                 <h2>Perfil Profesional</h2>
                 <p>
                     Estudiante de Ingeniería en Software en la Escuela Politécnica
@@ -82,7 +89,7 @@
                     aplicaciones móviles y realidad virtual.
                 </p>
             </section>
-            <section>
+            <section id="seccion-educacion">
                 <h2>Educación</h2>
                 <dt>
                     <h3>Ingeniería en Software</h3>
@@ -96,15 +103,15 @@
                     <h3>Bachillerato Internacional y en Ciencias</h3>
                 </dt>
                 <dd>
-                    Unidad Educativa La Condamine
+                    Unidad Educativa María Angélica Idrobo
                     <br />
-                    2017 - 2020
+                    2018 - 2021
                 </dd>
             </section>
-            <section>
+            <section id="seccion-experiencia">
                 <h2>Experiencia</h2>
                 <h3>Ludolab - Laboratorio de Juegos Serios</h3>
-                <p>Desarrollador Junio</p>
+                <p>Desarrollador Junior</p>
                 <ul>
                     <li>
                         Colaboración en el despliegue de la página oficina del laboratorio
@@ -114,10 +121,10 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section id="seccion-proyectos">
                 <h2>Proyectos</h2>
                 <dt>
-                    <h3>Aplicación móvil para Reservación de habitaciones en hoteles</h3>
+                    <h3>Aplicación móvil para Reservación de habitaciones </h3>
                 </dt>
                 <dd>
                     Implementaición en Android Studio utilizando Java, Google Mpas API y
@@ -136,7 +143,13 @@
                 </dd>
             </section>
         </article>
-    </main>
-</body>
 
+
+    </main>
+
+    <footer>
+        <p>© 2025 Fernando Nagua - Todos los derechos reservados</p>
+    </footer>
+
+</body>
 </html>
