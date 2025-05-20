@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Google Store, la tienda oficial de Google para dispositivos y accesorios diseñados por Google
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> -->
+    <!-- Material Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" /> -->
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        #logo-google {
+            width: 50px;
+            height: 50px;
+        }
+
+        .product-card {
+            width: 200px;
+            flex: 0 0 auto;
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-right: 16px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .scroll-container {
+            overflow-x: auto;
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 20px;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+            /* Oculta la barra de desplazamiento */
+        }
+
+        .arrow-btn {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-xxl">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand me-auto" href="#">
+                <img id="logo-google" src="assets/img/google-logo.png" alt="Logo de google">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teléfonos</a> <!-- aria-current="page" -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Auriculares de botón</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tablets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Relojes y pulseras de actividad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hogar inteligente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Asistencia</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav me-0 mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form> -->
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <p class="card-text">Serie Google Pixel 9 con Gemini</p>
+            <p class="card-text">Irresistiblemente mágicos.</p>
+            <a href="#" class="btn btn-primary">Ver teléfonos</a>
+        </div>
+        <img src="assets/img/celulares.jpg" card-img-top" alt="...">
+    </div>
+
+    <h2>Popular en Google Store.</h2>
+
+    <div class="d-flex align-items-center justify-content-between px-4">
+        <div class="arrow-btn" onclick="scrollRight()">&larr;</div>
+
+        <div class="scroll-container" id="productScroll">
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 1">
+                <h6 class="mt-2">Pixel Watch 3</h6>
+                <p class="text-muted">Desde 399 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 2">
+                <h6 class="mt-2">Pixel Buds Pro 2</h6>
+                <p class="text-muted">249 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 3">
+                <h6 class="mt-2">Pixel Tablet</h6>
+                <p class="text-muted">Desde 499 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 4">
+                <h6 class="mt-2">Google TV Streamer (4K)</h6>
+                <p class="text-muted">119 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
+                <h6 class="mt-2">Fitbit Charge 6</h6>
+                <p class="text-muted">159,95 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
+                <h6 class="mt-2">Fitbit Charge 6</h6>
+                <p class="text-muted">159,95 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
+                <h6 class="mt-2">Fitbit Charge 6</h6>
+                <p class="text-muted">159,95 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
+                <h6 class="mt-2">Fitbit Charge 6</h6>
+                <p class="text-muted">159,95 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
+                <h6 class="mt-2">Fitbit Charge 6</h6>
+                <p class="text-muted">159,95 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+        </div>
+
+        <div class="arrow-btn" onclick="scrollLeft()">&rarr;</div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Google Pixel 9 Pro y Pro XL</p>
+                        <h5 class="card-title">Pura magia, nivel Pro.</h5>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                    <img src="assets/img/pixel_9_pro.png" class="card-img-top" alt="Pixel 9 Pro y Pro XL">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card col-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Google Pixel 9</p>
+                        <h5 class="card-title">El primero en tener lo último.</h5>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                    <img src="assets/img/pixel_9.png" class="card-img-top" alt="Pixel 9">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card col-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Google Pixel 9a</p>
+                        <h5 class="card-title">Simplemente mágico.</h5>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                    <img src="assets/img/pixel_9a.png" class="card-img-top" alt="Pixel 9a">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card col-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Google Pixel Watch 3</p>
+                        <h5 class="card-title">Tu guía. Tus objetivos. Tu estilo.</h5>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                    <img src="assets/img/pixel_watch_3.png" class="card-img-top" alt="Pixel Watch 3">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card col-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text">Google Pixel Buds Pro 2</p>
+                        <h5 class="card-title">Oír para creer.</h5>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                    <img src="assets/img/pixel_buds_pro_2.png" class="card-img-top" alt="Pixel Buds Pro 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Echa un vistazo a<br>categorías populares.</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="assets/img/relojes_pulseras.png" alt="">
+                <p>Relojes y pulseras de actividad</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="assets/img/auriculares.png" alt="">
+                <p>Auriculares de botón/p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="assets/img/camaras.png" alt="">
+                <p>Cámaras</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/img/tv_streamer.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <p class="card-text">Google TV Streamer (4K)</p>
+                        <h5 class="card-title">Tu entretenimiento favorito, sin complicaciones.</h5>
+                        <a href="#" class="text-primary text-decoration-none">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Ventajas de comprar<br>en Google Store.</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://storage.googleapis.com/mannequin/blobs/246d17a3-8761-441b-8750-5c4a416e7553.svg" class="card-img-top" alt="container">
+                    <div class="card-body">
+                        <h5 class="card-title">Envío gratuito</h5>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://storage.googleapis.com/mannequin/blobs/cac661d1-3d5b-4b8e-84e9-9b3aefd66a94.svg" class="card-img-top" alt="etiqueta">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://storage.googleapis.com/mannequin/blobs/4dd88027-c7a9-4d97-801f-65f8cd66b4d3.svg" class="card-img-top" alt="calendario">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card’s content.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const container = document.getElementById("productScroll");
+
+        function scrollLeft() {
+            container.scrollBy({ left: -220, behavior: 'smooth' });
+        }
+
+        function scrollRight() {
+            container.scrollBy({ left: 220, behavior: 'smooth' });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
