@@ -74,79 +74,82 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-xxl">
+    <header>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand me-auto" href="#">
-                <img id="logo-google" src="assets/img/google-logo.png" alt="Logo de google">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-xxl">
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand me-auto" href="#">
+                    <img id="logo-google" src="assets/img/google-logo.png" alt="Logo de google">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Teléfonos</a> <!-- aria-current="page" -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Auriculares de botón</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tablets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Relojes y pulseras de actividad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hogar inteligente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Asistencia</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav me-0 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Teléfonos</a> <!-- aria-current="page" -->
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Auriculares de botón</a>
+                        <a class="nav-link" href="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tablets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Relojes y pulseras de actividad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hogar inteligente</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accesorios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ofertas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Asistencia</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <ul class="nav me-0 mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <span class="material-symbols-outlined">
-                            account_circle
-                        </span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -362,6 +365,31 @@
             </div>
         </div>
     </div>
+    
+    <foot>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="#">Métodos de pago</a>
+                            <a href="#">Envío gratuito estándar</a>
+                            <a href="#">Gestionar pedido</a>
+                            <a href="#">Disponibilidad por país y restricciones en la entrega</a>
+                            <a href="#">Reparaciones</a>
+                            <a href="#">Acerca de Google Store</a>
+                            <a href="#">Asistencia para personas con discapacidad</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#"></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </foot>
+    
     <script>
         const container = document.getElementById("productScroll");
 
