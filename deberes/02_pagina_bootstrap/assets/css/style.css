@@ -1,0 +1,167 @@
+:root {
+    --color-card: #f4f3ef;
+    --color-card-secundary: #f8f9fa;
+    --color-btn-hover: #dddcda;
+    /* --color-text: #128deb; */
+    --color-text: #3c4043;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+.material-symbols-outlined {
+    color: var(--color-text);
+}
+
+.nav-link {
+    font-size: 0.87rem;
+}
+
+.dropdown-item {
+    font-size: 0.87rem;
+    line-height: 2rem;
+}
+
+#portada {
+    background-color: var(--color-card);
+}
+
+.card {
+    border: 0px;
+}
+
+.btn {
+    background-color: transparent;
+    color: var(--color-text);
+    border: #202124 2px solid;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(--color-btn-hover);
+    color: var(--color-text);
+    border: #202124 2px solid;
+}
+
+#productos .card,
+#productos2 .card,
+#productos3 .card {
+    background-color: var(--color-card);
+}
+
+#ofertas img {
+    width: 3rem;
+}
+
+#ofertas p {
+    font-size: 0.75rem;
+}
+
+#ventajas img {
+    width: 2.5rem;
+}
+
+#logo-google {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+#ofertas,
+#ventajas .card {
+    background-color: var(--color-card-secundary);
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+h5 {
+    font-size: 1rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+#footer {
+    color: var(--color-text);
+    font-size: 0.88rem;
+}
+
+#footer2 {
+    color: var(--color-text);
+    font-size: 0.69rem;
+}
+
+#redes a {
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.product-card {
+    width: 200px;
+    flex: 0 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    margin-right: 16px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento */
+}
+
+.arrow-btn {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

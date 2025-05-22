@@ -10,78 +10,24 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <!-- Bootstrap Icons -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> -->
     <!-- Material Icon -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" /> -->
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings:
-                'FILL' 1,
-                'wght' 400,
-                'GRAD' 0,
-                'opsz' 24
-        } 
-
-        #logo-google {
-            width: 50px;
-            height: 50px;
-        }
-
-        .product-card {
-            width: 200px;
-            flex: 0 0 auto;
-            background-color: #f8f9fa;
-            border-radius: 15px;
-            padding: 20px;
-            margin-right: 16px;
-            text-align: center;
-        }
-
-        .product-card img {
-            width: 100px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .scroll-container {
-            overflow-x: auto;
-            display: flex;
-            flex-wrap: nowrap;
-            padding: 20px;
-        }
-
-        .scroll-container::-webkit-scrollbar {
-            display: none;
-            /* Oculta la barra de desplazamiento */
-        }
-
-        .arrow-btn {
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-    </style>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
             <div class="container-xxl">
-    
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand me-auto" href="#">
@@ -137,90 +83,92 @@
                                 account_circle
                             </span>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">
+                                    <span class="material-symbols-outlined">
+                                        orders
+                                    </span>
+                                    Pedidos
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <span class="material-symbols-outlined">
+                                        construction
+                                    </span>
+                                    Reparaciones
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <span class="material-symbols-outlined">
+                                        sync
+                                    </span>
+                                    Suscripciones
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <span class="material-symbols-outlined">
+                                        house
+                                    </span>
+                                    Mi casa Nest
+                                </a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <span class="material-symbols-outlined">
+                                        settings
+                                    </span>
+                                    Configuración
+                                </a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <!-- <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-    </form> -->
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <p class="card-text">Serie Google Pixel 9 con Gemini</p>
-            <p class="card-text">Irresistiblemente mágicos.</p>
-            <a href="#" class="btn btn-primary">Ver teléfonos</a>
+
+    <div class="container-fluid">
+        <div class="card mx-3 rounded-5" id="portada">
+            <div class="card-body text-center">
+                <h5 class="card-text mt-3">Serie Google Pixel 9 con Gemini</h5>
+                <h1 class="card-title">Irresistiblemente mágicos.</h1>
+                <a href="#" class="btn mt-3">Ver teléfonos</a>
+            </div>
+            <img src="assets/img/celulares.jpg" class="card-img-top rounded-5" alt="...">
         </div>
-        <img src="assets/img/celulares.jpg" card-img-top" alt="...">
     </div>
 
-    <h2>Popular en Google Store.</h2>
+    <h2 class="my-5">Popular en Google Store.</h2>
 
     <div class="d-flex align-items-center justify-content-between px-4">
         <div class="arrow-btn" onclick="scrollRight()">&larr;</div>
 
         <div class="scroll-container" id="productScroll">
             <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 1">
-                <h6 class="mt-2">Pixel Watch 3</h6>
+                <img src="assets/img/pixel_9_pro_xl.png" width="100px" alt="Producto 3">
+                <h5 class="mt-2">Pixel 9 Pro y Pro XL</h5>
+                <p class="text-muted">Desde 1099 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/pixel_9_carrusell.png" width="100px" alt="Producto 4">
+                <h5 class="mt-2">Pixel 9</h5>
+                <p class="text-muted">Desde 899 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/pixel_9a_carrusell.png" width="100px" alt="Producto 5">
+                <h5 class="mt-2">Pixel 9a</h5>
+                <p class="text-muted">Desde 549 €</p>
+                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
+            </div>
+            <div class="product-card">
+                <img src="assets/img/watch_3.png" width="100px" alt="Producto 1">
+                <h5 class="mt-2">Pixel Watch 3</h5>
                 <p class="text-muted">Desde 399 €</p>
                 <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
             </div>
             <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 2">
-                <h6 class="mt-2">Pixel Buds Pro 2</h6>
+                <img src="assets/img/bubs_pro_carrusell.png" width="100px" alt="Producto 2">
+                <h5 class="mt-2">Pixel Buds Pro 2</h5>
                 <p class="text-muted">249 €</p>
-                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 3">
-                <h6 class="mt-2">Pixel Tablet</h6>
-                <p class="text-muted">Desde 499 €</p>
-                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 4">
-                <h6 class="mt-2">Google TV Streamer (4K)</h6>
-                <p class="text-muted">119 €</p>
-                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
-                <h6 class="mt-2">Fitbit Charge 6</h6>
-                <p class="text-muted">159,95 €</p>
-                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
-                <h6 class="mt-2">Fitbit Charge 6</h6>
-                <p class="text-muted">159,95 €</p>
-                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
-                <h6 class="mt-2">Fitbit Charge 6</h6>
-                <p class="text-muted">159,95 €</p>
-                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
-                <h6 class="mt-2">Fitbit Charge 6</h6>
-                <p class="text-muted">159,95 €</p>
-                <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
-            </div>
-            <div class="product-card">
-                <img src="assets/img/google-logo.png" width="100px" alt="Producto 5">
-                <h6 class="mt-2">Fitbit Charge 6</h6>
-                <p class="text-muted">159,95 €</p>
                 <a href="#" class="text-primary text-decoration-none">Comprar &rarr;</a>
             </div>
         </div>
@@ -228,33 +176,33 @@
         <div class="arrow-btn" onclick="scrollLeft()">&rarr;</div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
+    <div class="container-fluid text-center mt-5" id="productos">
+        <div class="row gx-4 mx-3">
+            <div class="col">
+                <div class="card rounded-5">
                     <div class="card-body">
-                        <p class="card-text">Google Pixel 9 Pro y Pro XL</p>
-                        <h5 class="card-title">Pura magia, nivel Pro.</h5>
+                        <h5 class="card-text mt-4">Google Pixel 9 Pro y Pro XL</h5>
+                        <h3 class="card-title my-4">Pura magia,<br>nivel Pro.</h3>
                         <a href="#" class="btn btn-primary">Más información</a>
                     </div>
                     <img src="assets/img/pixel_9_pro.png" class="card-img-top" alt="Pixel 9 Pro y Pro XL">
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card col-4" style="width: 18rem;">
+            <div class="col">
+                <div class="card rounded-5">
                     <div class="card-body">
-                        <p class="card-text">Google Pixel 9</p>
-                        <h5 class="card-title">El primero en tener lo último.</h5>
+                        <h5 class="card-text  mt-4">Google Pixel 9</h5>
+                        <h3 class="card-title my-4">El primero en<br>tener lo último.</h3>
                         <a href="#" class="btn btn-primary">Más información</a>
                     </div>
                     <img src="assets/img/pixel_9.png" class="card-img-top" alt="Pixel 9">
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card col-4" style="width: 18rem;">
+            <div class="col">
+                <div class="card rounded-5">
                     <div class="card-body">
-                        <p class="card-text">Google Pixel 9a</p>
-                        <h5 class="card-title">Simplemente mágico.</h5>
+                        <h5 class="card-text  mt-4">Google Pixel 9a</h5>
+                        <h3 class="card-title my-4">Simplemente mágico.</h3>
                         <a href="#" class="btn btn-primary">Más información</a>
                     </div>
                     <img src="assets/img/pixel_9a.png" class="card-img-top" alt="Pixel 9a">
@@ -263,144 +211,185 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="card col-4" style="width: 18rem;">
+    <div class="container-fluid text-center" id="productos2">
+        <div class="row gx-4 mt-4 mb-5 mx-3">
+            <div class="col">
+                <div class="card rounded-5">
                     <div class="card-body">
-                        <p class="card-text">Google Pixel Watch 3</p>
-                        <h5 class="card-title">Tu guía. Tus objetivos. Tu estilo.</h5>
+                        <h5 class="card-text mt-3">Google Pixel Watch 3</h5>
+                        <h1 class="card-title mb-4">Tu guía. Tus<br>objetivos. Tu estilo.</h1>
                         <a href="#" class="btn btn-primary">Más información</a>
                     </div>
-                    <img src="assets/img/pixel_watch_3.png" class="card-img-top" alt="Pixel Watch 3">
+                    <img src="assets/img/pixel_watch_3.png" class="card-img-top img-fluid" alt="Pixel Watch 3">
                 </div>
             </div>
-            <div class="col-6">
-                <div class="card col-4" style="width: 18rem;">
+            <div class="col">
+                <div class="card rounded-5">
                     <div class="card-body">
-                        <p class="card-text">Google Pixel Buds Pro 2</p>
-                        <h5 class="card-title">Oír para creer.</h5>
+                        <h5 class="card-text mt-3">Google Pixel Buds Pro 2</h5>
+                        <h1 class="card-title mb-4">Oír para creer.</h1>
                         <a href="#" class="btn btn-primary">Más información</a>
                     </div>
-                    <img src="assets/img/pixel_buds_pro_2.png" class="card-img-top" alt="Pixel Buds Pro 2">
+                    <img src="assets/img/pixel_buds_pro_2.png" class="card-img-top img-fluid" alt="Pixel Buds Pro 2">
                 </div>
             </div>
         </div>
     </div>
 
-    <h2>Echa un vistazo a<br>categorías populares.</h2>
+    <h2 class="mx-5 my-5">Echa un vistazo a<br>categorías populares.</h2>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/img/relojes_pulseras.png" alt="">
-                <p>Relojes y pulseras de actividad</p>
+    <div class="container-fluid text-center">
+        <div class="row gx-4 mx-5 mb-5">
+            <div class="col">
+                <div class="rounded rounded-4 border">
+                    <img src="assets/img/relojes_pulseras.png" alt="">
+                    <p class="text-primary">Relojes y pulseras de actividad</p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/img/auriculares.png" alt="">
-                <p>Auriculares de botón/p>
+            <div class="col">
+                <div class="rounded rounded-4 border">
+                    <img src="assets/img/auriculares.png" alt="">
+                    <p class="text-primary">Auriculares de botón</p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/img/camaras.png" alt="">
-                <p>Cámaras</p>
+            <div class="col">
+                <div class="rounded rounded-4 border">
+                    <img src="assets/img/camaras.png" alt="">
+                    <p class="text-primary">Cámaras</p>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="card" style="width: 18rem;">
+ 
+    <div class="container-fluidmy-5" id="productos3">
+        <div class="card rounded-5 mx-3 my-5">
             <div class="row">
                 <div class="col">
-                    <img src="assets/img/tv_streamer.png" class="card-img-top" alt="...">
+                    <img src="assets/img/tv_streamer.png" class="card-img-top" alt="Google TV Streamer (4K)">
                 </div>
                 <div class="col">
-                    <div class="card-body">
-                        <p class="card-text">Google TV Streamer (4K)</p>
-                        <h5 class="card-title">Tu entretenimiento favorito, sin complicaciones.</h5>
-                        <a href="#" class="text-primary text-decoration-none">Más información</a>
+                    <div class="card-body pt-4">
+                        <h5 class="card-text text-start mt-5">Google TV Streamer (4K)</h5>
+                        <h1 class="card-title text-start mb-4">Tu entretenimiento favorito, sin complicaciones.</h1>
+                        <a href="#" class="btn">Más información</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <h2>Ventajas de comprar<br>en Google Store.</h2>
+    <div class="container-fluid">
+        <div class="card text-center rounded-5 mx-3 my-5" id="ofertas">
+            <div class="card-body">
+                <img src="https://storage.googleapis.com/mannequin/blobs/d6f9014c-ff31-40dc-b027-eeccbd2e5f72.svg"
+                    class="card-img-top mt-4 mb-3" alt="...">
+                <h2 class="card-title mb-4">Recibe noticias, ofertas,<br>recordatorios del carrito y<br>encuestas de Google
+                    Store.</h2>
+                <input type="checkbox" id="ofertas_personalizadas">
+                <label for="ofertas_personalizadas">Quiero recibir ofertas personalizadas que me puedan interesar e
+                    información pensada para mí.</label><br>
+                <a href="#" class="btn btn-primary my-4">Registrarme</a>
+                <p class="card-text mb-4">Tus datos personales serán tratados de acuerdo con la <a href="#">Política de
+                        Privacidad de Google.</a></p>
+            </div>
+        </div>
+    </div>
 
-    <div class="container">
+    <h2 class="my-5">Ventajas de comprar<br>en Google Store.</h2>
+
+    <div class="container text-center" id="ventajas">
         <div class="row">
             <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://storage.googleapis.com/mannequin/blobs/246d17a3-8761-441b-8750-5c4a416e7553.svg" class="card-img-top" alt="container">
+                <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title">Envío gratuito</h5>
+                        <img src="https://storage.googleapis.com/mannequin/blobs/246d17a3-8761-441b-8750-5c4a416e7553.svg"
+                            class="card-img-top mt-5" alt="container">
+                        <h4 class="card-title my-4">Envío gratuito.</h4>
                         <a href="#" class="btn btn-primary">Más información</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://storage.googleapis.com/mannequin/blobs/cac661d1-3d5b-4b8e-84e9-9b3aefd66a94.svg" class="card-img-top" alt="etiqueta">
+                <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card’s content.</p>
+                        <img src="https://storage.googleapis.com/mannequin/blobs/cac661d1-3d5b-4b8e-84e9-9b3aefd66a94.svg"
+                            class="card-img-top mt-5" alt="etiqueta">
+                        <h4 class="card-title my-4">Benefíciate de nuestro<br>compromiso de<br>igualación de precios.</h4>
                         <a href="#" class="btn btn-primary">Más información</a>
                     </div>
                 </div>
             </div>
             <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://storage.googleapis.com/mannequin/blobs/4dd88027-c7a9-4d97-801f-65f8cd66b4d3.svg" class="card-img-top" alt="calendario">
+                <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card’s content.</p>
+                        <img src="https://storage.googleapis.com/mannequin/blobs/4dd88027-c7a9-4d97-801f-65f8cd66b4d3.svg"
+                            class="card-img-top mt-5" alt="calendario">
+                        <h4 class="card-title my-4">Devoluciones<br>sencillas y gratuitas.</h4>
                         <a href="#" class="btn btn-primary">Más información</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <foot>
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="row">
-                        <div class="col-2">
-                            <a href="#">Métodos de pago</a>
-                            <a href="#">Envío gratuito estándar</a>
-                            <a href="#">Gestionar pedido</a>
-                            <a href="#">Disponibilidad por país y restricciones en la entrega</a>
-                            <a href="#">Reparaciones</a>
-                            <a href="#">Acerca de Google Store</a>
-                            <a href="#">Asistencia para personas con discapacidad</a>
-                        </div>
-                        <div class="col-2">
-                            <a href="#"></a>
 
-                        </div>
-                    </div>
+    <footer class="mt-5 pt-4">
+        <div class="container mb-5" id="footer">
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col">
+                    <ul class="list-unstyled lh-base">
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Métodos de pago</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Envío gratuito estándar</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Gestionar un pedido</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Disponibilidad por país y restricciones
+                                en la entrega</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Reparaciones</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Acerca de Google Store</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Asistencia para personas con discapacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled">
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Centro de Ayuda</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Contacto</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Atención al cliente de Fitbit</a></li>
+                        <li class="mt-4"><a href="#" class="text-decoration-none text-dark">Reciclaje de dispositivos</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </foot>
-    
-    <script>
-        const container = document.getElementById("productScroll");
 
-        function scrollLeft() {
-            container.scrollBy({ left: -220, behavior: 'smooth' });
-        }
+        <div class="container-fluid  border-top pt-3" id="footer2">
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <div>
+                        <div class="mb-3" id="redes">
+                            <a href="#"><i class="bi bi-twitter-x me-3"></i></a>
+                            <a href="#"><i class="bi bi-instagram me-3"></i></a>
+                            <a href="#"><i class="bi bi-facebook me-3"></i></a>
+                            <a href="#"><i class="bi bi-youtube me-3"></i></a>
+                            <a href="#"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-dark me-4">España</a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-dark me-4">Privacidad</a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-dark me-4">Compromiso con
+                                la Privacidad de Google Nest</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-dark me-4">Condiciones de
+                                venta</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-dark me-4">Términos del
+                                Servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
 
-        function scrollRight() {
-            container.scrollBy({ left: 220, behavior: 'smooth' });
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
