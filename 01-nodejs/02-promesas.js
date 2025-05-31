@@ -10,10 +10,11 @@ function promesaEsPar(numero) {
             }
         }
     )
+    return miPrimerPromesa;
 }
 
 function promesaElevadaCuadrado(numero) {
-    return new Promise(res=>res(numero*numero));
+    return Promise.resolve(numero*numero);
 }
 
 promesaEsPar(4)
